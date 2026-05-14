@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - WellCart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <h1 class="site-logo">
+                <a href="index.html">
+                    <img src="images/3D LOGO.png" alt="WellCart Logo" class="site-logo-icon">
+                    WellCart
+                </a>
+            </h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" class="search-icon" aria-label="Search"><img src="images/search.png" alt="Search"></a>
+                <a href="cart.html" class="cart-icon" aria-label="Shopping Cart">
+                    <img src="images/cart.png" alt="Cart">
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="account.html" class="account-icon active" aria-label="My Account"><img
+                        src="images/my account.png" alt="Account"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="account-section">
+            <div class="container">
+                <div class="account-form-container">
+                    <div class="form-toggle">
+                        <button id="show-login-btn" class="toggle-btn active">Login</button>
+                        <button id="show-register-btn" class="toggle-btn">Register</button>
+                    </div>
+
+                    <form id="login-form" class="account-form active">
+                        <h2>Login</h2>
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        <a href="#" class="form-link">Forgot your password?</a>
+                    </form>
+
+                    <form id="register-form" class="account-form">
+                        <h2>Register</h2>
+                        <div class="form-group">
+                            <label for="register-name">Name</label>
+                            <input type="text" id="register-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-email">Email</label>
+                            <input type="email" id="register-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">Password</label>
+                            <input type="password" id="register-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2023 WellCart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="account.js"></script>
+</body>
+
+</html>
